@@ -2,38 +2,54 @@
 # Week 2 README Template
 
 ## Summary
-Write 3–6 lines explaining what the Harbor Rescue Inventory assignment does.
+The Harbor Rescue Inventory assignment uses Python lists to manage rescue supplies.
+It includes functions that check the first and last items, return parts of a list, find item positions, and count supplies.
+The goal is to practice list operations such as slicing, searching, and counting.
+These functions help rescuers quickly understand what items are available.
 
 ## Approach
-Use bullets to explain how each function works.
+mission_snapshot:
+Returns the first and last items from the list. If the list is empty, it returns (None, None).
 
-- `mission_snapshot`:
-- `cargo_window`:
-- `first_supply_index`:
-- `supply_report`:
-- `priority_load` (stretch):
+cargo_window:
+Returns a slice of the list starting from a specific index and including up to the given size.
+
+first_supply_index:
+Uses a loop to find the first position of the target item. Returns -1 if the item is not found.
+
+supply_report:
+Counts how many times the target item appears in the list and also returns the first index.
+
+priority_load (stretch):
+Creates a new list with the urgent item added at the beginning without modifying the original list.
 
 ## Complexity reasoning
 
-| Function | Time complexity | Why |
-|---|---|---|
-| `mission_snapshot` |  |  |
-| `cargo_window` |  |  |
-| `first_supply_index` |  |  |
-| `supply_report` |  |  |
-| `priority_load` (stretch) |  |  |
+| Function                  | Time complexity | Why                                      |
+| ------------------------- | --------------- | ---------------------------------------- |
+| `mission_snapshot`        | O(1)            | Only accesses first and last element     |
+| `cargo_window`            | O(k)            | Returns a slice of size `k`              |
+| `first_supply_index`      | O(n)            | May check every element in the list      |
+| `supply_report`           | O(n)            | Iterates through the list to count items |
+| `priority_load` (stretch) | O(n)            | Creates a new list with the urgent item  |
+
 
 ## Edge-case checklist
-Mark the cases you tested.
+ empty list
 
-- [ ] empty list
-- [ ] one-item list
-- [ ] target missing
-- [ ] repeated values
-- [ ] slice goes past end
-- [ ] size is zero
-- [ ] size is negative
-- [ ] original list unchanged in `priority_load`
+ one-item list
+
+ target missing
+
+ repeated values
+
+ slice goes past end
+
+ size is zero
+
+ size is negative
+
+ original list unchanged in priority_load
 
 ## Assistance / Sources
 List any help you used and what kind of help it gave.
