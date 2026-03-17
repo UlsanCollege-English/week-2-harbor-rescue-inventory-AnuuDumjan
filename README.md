@@ -35,27 +35,16 @@ Creates a new list with the urgent item added at the beginning without modifying
 
 
 ## Edge-case checklist
- empty list
-
- one-item list
-
- target missing
-
- repeated values
-
- slice goes past end
-
- size is zero
-
- size is negative
-
- original list unchanged in priority_load
+ - [x] empty list
+- [x] one-item list
+- [x] target missing
+- [x] repeated values
+- [x] slice goes past end
+- [x] size is zero
+- [x] size is negative
+- [x] original list unchanged in priority_load
 
 ## Assistance / Sources
-List any help you used and what kind of help it gave.
 
-- Person / tool / website:
-  - Help received:
-
-- Person / tool / website:
-  - Help received:
+Person / tool / website: ChatGPT  
+Help received: Helped explain the assignment and helped write the README structure.
