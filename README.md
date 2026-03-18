@@ -46,5 +46,10 @@ Creates a new list with the urgent item added at the beginning without modifying
 
 ## Assistance / Sources
 
+## Assistance / Sources
+
 Person / tool / website: ChatGPT  
-Help received: Helped explain the assignment and helped write the README structure.
+Help received: Helped explain the assignment instructions and structure the README.
+
+Person / tool / website: Google  
+Help received: Used for general Python list documentation and syntax reference.
